@@ -3,6 +3,25 @@
   "version": "1.0.0",
   "description": "A website to show the developer information and highlighted works.",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabyse1/my-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabyse1/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/gabyse1/my-portfolio#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.5.5",
+    "morgan": "^1.10.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.18.10",
     "@babel/core": "^7.19.0",
@@ -17,19 +36,5 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gabyse1/my-portfolio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gabyse1/my-portfolio/issues"
-  },
-  "homepage": "https://github.com/gabyse1/my-portfolio#readme"
+  }
 }
