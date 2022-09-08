@@ -8,7 +8,11 @@
     "@babel/core": "^7.19.0",
     "@babel/node": "^7.18.10",
     "@babel/preset-env": "^7.19.0",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
