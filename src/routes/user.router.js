@@ -58,32 +58,30 @@ userRouter.post('/signup',
 
     const savedNewUser = await newUser.save();
 
-    if (savedNewUser) {
-      const mailData = {
-        from: process.env.MAIL_SENDER_USER,
-        to: savedNewUser.email,
-        subject: 'Please confirm your account',
-        html: `<h1>Email Confirmation</h1>
-          <h2>Hello ${savedNewUser.name}</h2>
-          <p>Please confirm your email by clicking on the following link</p>
-          <a href=http://localhost:3000/portfolio-admin/confirm/${savedNewUser.confirmationCode}> Click here</a>`,
-      };
+    if (!savedNewUser) return res.status(500).send({ message: { error: 'Something went wrong. Try it again.' } });
 
-      const transporter = nodemailer.createTransport({
-        port: 465,
-        host: 'smtp.gmail.com',
-        auth: {
-          user: process.env.MAIL_SENDER_USER,
-          pass: process.env.MAIL_SENDER_PASSWORD,
-        },
-        secure: true,
-      });
+    const mailData = {
+      from: process.env.MAIL_SENDER_USER,
+      to: savedNewUser.email,
+      subject: 'Please confirm your account',
+      html: `<h1>Email Confirmation</h1>
+        <h2>Hello ${savedNewUser.name}</h2>
+        <p>Please confirm your email by clicking on the following link</p>
+        <a href=http://localhost:3000/portfolio-admin/confirm/${savedNewUser.confirmationCode}> Click here</a>`,
+    };
 
-      transporter.sendMail(mailData, (error) => {
-        if (error) res.status(500).send({ message: { error: 'Something went wrong. Try it again.' } });
-        res.send({ message: { success: 'User was registered successfully!. Please check your email.' } });
-      });
-    } else return res.status(500).send({ message: { error: 'Something went wrong. Try it again.' } });
+    const transporter = nodemailer.createTransport({
+      port: 465,
+      host: 'smtp.gmail.com',
+      auth: {
+        user: process.env.MAIL_SENDER_USER,
+        pass: process.env.MAIL_SENDER_PASSWORD,
+      },
+      secure: true,
+    });
+
+    transporter.sendMail(mailData);
+    return res.send({ message: { success: 'User was registered successfully!. Please check your email.' } });
   }));
 
 userRouter.get('/confirm/:confCode',
