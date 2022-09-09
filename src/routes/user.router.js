@@ -2,7 +2,6 @@ import express from 'express';
 import expressAsyncHandler from 'express-async-handler';
 import bcrypt from 'bcryptjs';
 import nodemailer from 'nodemailer';
-import data from '../data';
 import User from '../models/User';
 import generateToken from '../helpers/generateToken';
 import isAuth from '../helpers/isAuth';
@@ -13,12 +12,6 @@ import validateProfileInput from '../validations/profile';
 /* eslint no-underscore-dangle: 0 */
 
 const userRouter = express.Router();
-
-userRouter.get('/seed',
-  expressAsyncHandler(async (req, res) => {
-    const createdUsers = await User.insertMany(data.users);
-    res.send({ createdUsers });
-  }));
 
 userRouter.post('/signin',
   expressAsyncHandler(async (req, res) => {
