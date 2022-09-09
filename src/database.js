@@ -1,8 +1,11 @@
+import dotenv from 'dotenv';
 import { connect } from 'mongoose';
+
+if (process.env.NODE_ENV !== 'production') dotenv.config();
 
 (async () => {
   try {
-    const db = await connect(process.env.MONGODB_URL || 'mongodb://localhost:27017/myPortfolioDB', {
+    const db = await connect(process.env.MONGODB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
@@ -11,3 +14,5 @@ import { connect } from 'mongoose';
     console.log('Can not connect to the database. ', error);
   }
 })();
+
+// 'mongodb://localhost:27017/myPortfolioDB'
