@@ -58,34 +58,32 @@ userRouter.post('/signup',
 
     const savedNewUser = await newUser.save();
 
-    if (!savedNewUser) return res.status(500).send({ message: { error: 'Something went wrong. Try it again.' } });
+    if (savedNewUser) {
+      const mailData = {
+        from: process.env.MAIL_SENDER_USER,
+        to: savedNewUser.email,
+        subject: 'Please confirm your account',
+        html: `<h1>Email Confirmation</h1>
+          <h2>Hello ${savedNewUser.name}</h2>
+          <p>Please confirm your email by clicking on the following link</p>
+          <a href=http://localhost:3000/portfolio-admin/confirm/${savedNewUser.confirmationCode}> Click here</a>`,
+      };
 
-    const mailData = {
-      from: process.env.MAIL_SENDER_USER,
-      to: savedNewUser.email,
-      subject: 'Please confirm your account',
-      html: `<h1>Email Confirmation</h1>
-        <h2>Hello ${savedNewUser.name}</h2>
-        <p>Please confirm your email by clicking on the following link</p>
-        <a href=http://localhost:3000/portfolio-admin/confirm/${savedNewUser.confirmationCode}> Click here</a>`,
-    };
+      const transporter = nodemailer.createTransport({
+        port: 465,
+        host: 'smtp.gmail.com',
+        auth: {
+          user: process.env.MAIL_SENDER_USER,
+          pass: process.env.MAIL_SENDER_PASSWORD,
+        },
+        secure: true,
+      });
 
-    const transporter = nodemailer.createTransport({
-      port: 465,
-      host: 'smtp.gmail.com',
-      auth: {
-        user: process.env.MAIL_SENDER_USER,
-        pass: process.env.MAIL_SENDER_PASSWORD,
-      },
-      secure: true,
-    });
-
-    transporter.sendMail(mailData, (error) => {
-      if (error) return res.status(500).send({ message: { error: 'Something went wrong. Try it again.' } });
-      return res.send({ message: { success: 'User was registered successfully!. Please check your email.' } });
-    });
-
-    return res.send({ message: { success: 'User was registered successfully!. Please check your email.' } });
+      transporter.sendMail(mailData, (error) => {
+        if (error) res.status(500).send({ message: { error: 'Something went wrong. Try it again.' } });
+        res.send({ message: { success: 'User was registered successfully!. Please check your email.' } });
+      });
+    } else return res.status(500).send({ message: { error: 'Something went wrong. Try it again.' } });
   }));
 
 userRouter.get('/confirm/:confCode',
