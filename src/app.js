@@ -18,7 +18,7 @@ if (process.env.NODE_ENV !== 'production') dotenv.config();
 const app = express();
 
 // settings
-app.set('port', process.env.PORT || 3001);
+app.set('port', process.env.PORT || 5000);
 
 // middlewares
 app.use(morgan('tiny'));
