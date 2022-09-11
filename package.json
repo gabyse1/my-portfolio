@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A website to show the developer information and highlighted works.",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon src/app.js --exec babel-node",
     "start": "cross-env NODE_ENV=production node src/app.js --exec babel-node"
