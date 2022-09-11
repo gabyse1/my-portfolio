@@ -1,0 +1,143 @@
+.about__section {
+  background-image: url('../../images/bg-portfolio-gral-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+
+  .section__container {
+    @include display-column-center-row-center;
+  }
+
+  .about__profile,
+  .about__skill {
+    width: 100%;
+    @include display-column-start-row-center;
+  }
+
+  .about__profile {
+    margin-bottom: 2rem;
+    justify-content: center;
+    text-align: center;
+  
+    .image__box {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+    }
+  
+    .text__box {
+      opacity: 0;
+      animation: fadeOut 1000ms ease-in-out 0ms forwards;
+    }
+  }
+  
+  .about__skill {
+    overflow: hidden;
+  
+    .list {
+      width: 100%;
+      opacity: 0;
+      animation: fadeOut 1000ms ease-in-out 0ms forwards;
+      @include display-row-center-col-center;
+    }
+  }
+
+  @include mq-tablet {
+    .about__profile {
+      margin-bottom: 3rem;
+    
+      .image__box {
+        margin-bottom: 2rem;
+      }
+
+      .text__box {
+        max-width: 400px;
+      }
+    }
+    
+    .about__skill {
+      overflow: hidden;
+      @include display-column-start-row-center;
+
+      .list {
+        max-width: 500px;
+
+        li {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+
+  @include mq-desktop {
+    .section__container {
+      width: 100%;
+      @include display-row-center-col-center;
+      justify-content: space-evenly;
+    }
+
+    .about__profile,
+    .about__skill {
+      margin: 0 1rem;
+    }
+
+    .about__profile {
+      margin-bottom: 0;
+    }
+  }
+}
+
+#about.about__animation {
+  .image__box {
+    animation: scaleTranslateImage 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 250ms forwards;
+  }
+
+  .text__box {
+    animation: translateToRight 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 250ms forwards;
+  }
+
+  .list:nth-child(1) {
+    animation: translateToRight 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 500ms forwards;
+  }
+
+  .list:nth-child(2) {
+    animation: translateToRight 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 750ms forwards;
+  }
+
+  .list:nth-child(3) {
+    animation: translateToRight 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 1000ms forwards;
+  }
+
+  .list:nth-child(4) {
+    animation: translateToRight 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 1250ms forwards;
+  }
+
+  @include mq-desktop {
+    .list:nth-child(1) {
+      animation: translateToLeft 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 500ms forwards;
+    }
+  
+    .list:nth-child(2) {
+      animation: translateToLeft 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 750ms forwards;
+    }
+  
+    .list:nth-child(3) {
+      animation: translateToLeft 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 1000ms forwards;
+    }
+  
+    .list:nth-child(4) {
+      animation: translateToLeft 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 1250ms forwards;
+    }
+  }
+}
+
+@keyframes MoveRightSkillIcons {
+  0% { transform: translateX(-10%); }
+  100% { transform: translateX(10%); }
+}
+
+@keyframes MoveLeftSkillIcons {
+  0% { transform: translateX(10%); }
+  100% { transform: translateX(-10%); }
+}
