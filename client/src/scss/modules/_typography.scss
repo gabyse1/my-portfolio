@@ -1,0 +1,46 @@
+@font-face {
+  font-family: Saudagar;
+  src: url('../../fonts/Saudagar.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Galgine;
+  src: url('../../fonts/Galgine.otf') format('opentype');
+}
+
+@mixin font-base ($fs: 1rem, $fw: bold, $lh: normal) {
+<<<<<<< HEAD
+  font-family: Saudagar, sans-serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: 0.05rem;
+}
+
+@mixin font-title ($fs: 1rem, $fw: bold, $lh: 1.2) {
+  font-family: Saudagar, sans-serif;
+=======
+  font-family: Saudagar;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: 0.05rem; 
+}
+
+@mixin font-title ($fs: 1rem, $fw: bold, $lh: 1.2) {
+  font-family: Saudagar;
+>>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin font-accent ($fs: 1rem, $fw: bold, $lh: 1) {
+<<<<<<< HEAD
+  font-family: Galgine, sans-serif;
+=======
+  font-family: Galgine;
+>>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
