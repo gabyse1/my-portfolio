@@ -9,7 +9,7 @@
 }
 
 @mixin font-base ($fs: 1rem, $fw: bold, $lh: normal) {
-  font-family: Saudagar, sans-serif;
+  font-family: Saudagar;
   font-size: $fs;
   font-weight: $fw;
   line-height: $lh;
@@ -17,15 +17,13 @@
 }
 
 @mixin font-title ($fs: 1rem, $fw: bold, $lh: 1.2) {
-  font-family: Saudagar, sans-serif;
-  font-size: $fs;
+  font-family: Saudagar;
   font-weight: $fw;
   line-height: $lh;
-  letter-spacing: 0.05rem; 
 }
 
 @mixin font-accent ($fs: 1rem, $fw: bold, $lh: 1) {
-  font-family: Galgine, sans-serif;
+  font-family: Galgine;
   font-size: $fs;
   font-weight: $fw;
   line-height: $lh;

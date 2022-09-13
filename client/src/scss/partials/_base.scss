@@ -54,6 +54,7 @@ ul {
   li {
     width: auto;
     padding: 0.5rem;
+
     @include display-row-start-col-center;
   }
 }
@@ -105,7 +106,6 @@ button {
   border-color: $coral-dark;
 
   @include display-row-center-col-center;
-
   @include font-base;
 }
 
