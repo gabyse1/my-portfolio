@@ -16,7 +16,6 @@ const Works = ({ anim }) => {
   const [progPercent, setProgPercent] = useState(0);
   const [activeIndexSlide, setActiveIndexSlide] = useState(0);
   const [modalDetailsOpen, setModalDetailsOpen] = useState(false);
-  // console.log('----------------------', numSlides);
 
   const resetProgBar = (nroSlides) => {
     if (nroSlides > 0) {

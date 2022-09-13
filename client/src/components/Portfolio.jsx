@@ -94,11 +94,13 @@ const Portfolio = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      window.location.reload();
-      setDimensions({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
+      if (window.innerWidth !== dimensions.width) {
+        window.location.reload();
+        setDimensions({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
     };
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
