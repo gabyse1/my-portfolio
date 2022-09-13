@@ -54,10 +54,6 @@ ul {
   li {
     width: auto;
     padding: 0.5rem;
-<<<<<<< HEAD
-
-=======
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     @include display-row-start-col-center;
   }
 }
@@ -76,7 +72,6 @@ svg {
   fill: $purple-dark;
 }
 
-<<<<<<< HEAD
 button {
   cursor: pointer;
   transition: all 250ms ease-in-out;
@@ -87,8 +82,6 @@ button {
   }
 }
 
-=======
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
 .icon__box {
   @include display-row-center-col-center;
 
@@ -102,19 +95,6 @@ button {
   }
 }
 
-<<<<<<< HEAD
-=======
-button {
-  cursor: pointer;
-  transition: all 250ms ease-in-out;
-
-  svg {
-    fill: $purple-light;
-    transition: fill 250ms ease-in-out;
-  }
-}
-
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
 .btn {
   width: 9.125rem;
   padding: 0.25rem 1rem;
@@ -125,10 +105,7 @@ button {
   border-color: $coral-dark;
 
   @include display-row-center-col-center;
-<<<<<<< HEAD
-=======
 
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
   @include font-base;
 }
 
@@ -144,11 +121,7 @@ form {
   margin: 0 auto;
   display: grid;
   grid-column: 1;
-<<<<<<< HEAD
   row-gap: 0.5rem;
-=======
-  row-gap: .5rem;
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
 
   .form-group {
     width: 100%;
@@ -165,13 +138,9 @@ form {
     border-radius: 0.25rem;
     color: $purple-dark;
     outline: none;
-<<<<<<< HEAD
 
     @include font-base;
 
-=======
-    @include font-base;
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     font-size: 1.15rem;
     transition: border 250ms ease-in-out;
   }
@@ -209,11 +178,7 @@ form {
     top: calc(1.5rem - 2px);
     left: 0.75rem;
     transform-origin: 0 0;
-<<<<<<< HEAD
     transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
-=======
-    transition: opacity .1s ease-in-out, transform .1s ease-in-out;
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
   }
 
   .form-control::placeholder {
@@ -225,17 +190,10 @@ form {
     padding-bottom: 0.625rem;
   }
 
-<<<<<<< HEAD
   .form-control:not(:placeholder-shown) ~ .label-text,
   .form-control:focus ~ .label-text {
     opacity: 0.65;
     transform: scale(0.85) translateY(-1rem) translateX(0.15rem);
-=======
-  .form-control:not(:placeholder-shown)~.label-text,
-  .form-control:focus~.label-text {
-    opacity: .65;
-    transform: scale(.85) translateY(-1rem) translateX(0.15rem);
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
   }
 
   .form-extrainfo {
@@ -243,40 +201,10 @@ form {
   }
 }
 
-<<<<<<< HEAD
 #root {
   width: 100%;
   height: 100vh;
 
-=======
-.dropdown {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-
-  .dropdown-content {
-    min-width: 6rem;
-    margin: 0;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    background-color: rgba($coral-dark, 1);
-    display: none;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-  }
-}
-
-.dropdown:hover {
-  .dropdown-content {
-    display: block;
-  }
-}
-
-#root {
-  width: 100%;
-  height: 100vh;
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
   @include display-column-start-row-start;
 }
 
@@ -289,11 +217,7 @@ form {
   @include display-column-start-row-start;
 
   scrollbar-width: thin;
-<<<<<<< HEAD
   scrollbar-color: rgba($white, 0);
-=======
-  scrollbar-color: transparent;
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
 
   &::-webkit-scrollbar {
     width: 0.25rem;
@@ -317,10 +241,7 @@ form {
 .page__section {
   width: 100%;
   height: 100vh;
-<<<<<<< HEAD
 
-=======
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
   @include display-column-start-row-start;
 
   .section__title {
@@ -341,17 +262,10 @@ form {
     margin: auto;
     overflow: hidden;
     background-color: $base;
-<<<<<<< HEAD
     transform-origin: 100% 0%;
 
     @include display-row-center-col-center;
 
-=======
-    transform-origin: 100 0;
-  
-    @include display-row-center-col-center;
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     img {
       width: 100%;
       height: auto;
@@ -361,14 +275,9 @@ form {
   .btn__back {
     width: auto;
     color: $coral-dark;
-<<<<<<< HEAD
 
     @include display-row-start-col-center;
 
-=======
-    @include display-row-start-col-center;
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     svg {
       fill: $coral-dark;
     }
@@ -388,11 +297,7 @@ form {
       width: 1.2rem;
       height: auto;
       fill: $coral-dark;
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
       .rect__scroll {
         height: 1rem;
         animation: animateMouseIcon 3s linear infinite;
@@ -476,11 +381,7 @@ form {
     .section__title {
       margin-bottom: 3rem;
     }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     .section__container {
       height: calc(100vh - 7rem);
       margin-top: 7rem;

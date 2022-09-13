@@ -7,11 +7,7 @@
   .section__container-home {
     position: relative;
   }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
   .icon__mouse {
     opacity: 0;
     animation: fadeOut 1000ms ease-in-out 0ms forwards;
@@ -20,43 +16,27 @@
   .home__developer {
     height: 25rem;
     width: 16rem;
-<<<<<<< HEAD
 
     @include display-column-center-row-start;
 
-=======
-  
-    @include display-column-center-row-start;
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     position: absolute;
     top: 80%;
     left: 15%;
     transform: translateY(-80%);
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     > div {
       width: 100%;
       height: 50%;
       overflow: hidden;
       position: absolute;
-<<<<<<< HEAD
       padding-left: 0.25rem;
 
-=======
-
-      padding-left: 0.25rem;
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
       > div,
       .list {
         padding: 1rem 0;
         position: absolute;
       }
     }
-<<<<<<< HEAD
 
     .text__top {
       top: 0;
@@ -68,42 +48,21 @@
       .title__home {
         @include font-accent;
 
-=======
-  
-    .text__top {
-      top: 0;
-  
-      >:last-child {
-        margin-bottom: 0;
-      }
-  
-      .title__home {
-        @include font-accent;
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
         font-size: 2.5rem;
         color: $purple-dark;
         margin-bottom: 0.5rem;
       }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
       .subtitle__home {
         font-size: 1.5rem;
         font-weight: bolder;
       }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
       > div {
         opacity: 0;
         animation: fadeOut 1000ms ease-in-out 0ms forwards;
       }
     }
-<<<<<<< HEAD
 
     .text__bottom {
       bottom: 0;
@@ -112,16 +71,6 @@
         opacity: 0;
         animation: fadeOut 1000ms ease-in-out 0ms forwards;
 
-=======
-  
-    .text__bottom {
-      bottom: 0;
-  
-      > .list {
-        opacity: 0;
-        animation: fadeOut 1000ms ease-in-out 0ms forwards;
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
         li {
           &:first-child {
             padding-left: 0;
@@ -142,11 +91,7 @@
     bottom: 12%;
     opacity: 0;
     animation: fadeOut 1000ms ease-in-out 0ms forwards;
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     @include css_slider(3);
   }
 
@@ -164,21 +109,13 @@
         .title__home {
           font-size: 3rem;
         }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
         .subtitle__home {
           font-size: 1.75rem;
         }
       }
     }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     .home__messages {
       font-size: 1.25rem;
       bottom: 15%;
@@ -230,7 +167,6 @@
 }
 
 @keyframes showTopTextMobile {
-<<<<<<< HEAD
   0% { opacity: 1; }
   0% { transform: translateY(100%); }
 
@@ -238,35 +174,21 @@
   60% { transform: translateY(30%); }
   100% { opacity: 1; }
   100% { transform: translateY(0); }
-=======
-  0% { opacity: 1; transform: translateY(100%); }
-  40%,
-  60% { transform: translateY(30%); }
-  100% { opacity: 1; transform: translateY(0); }
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
 }
 
 @keyframes showTopTextDesktop {
   0% { transform: translateY(100%); }
-<<<<<<< HEAD
 
-=======
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
   40%,
   60% { transform: translateY(50%); }
   100% { transform: translateY(0); }
 }
 
 @keyframes showBottomText {
-<<<<<<< HEAD
   0% { opacity: 1; }
   0% { transform: translateY(-100%); }
   100% { opacity: 1; }
   100% { transform: translateY(0); }
-=======
-  0% { opacity: 1; transform: translateY(-100%); }
-  100% { opacity: 1; transform: translateY(0); }
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
 }
 
 @keyframes revealBar {

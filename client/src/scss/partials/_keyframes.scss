@@ -1,15 +1,10 @@
 @keyframes fadeIn {
   0% { opacity: 0; }
-<<<<<<< HEAD
   100% { opacity: 1; }
-=======
-  100% { opacity: 1;}
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
 }
 
 @keyframes fadeOut {
   0% { opacity: 1; }
-<<<<<<< HEAD
   100% { opacity: 0; }
 }
 
@@ -32,34 +27,11 @@
   0% { transform: translateY(200%); }
   100% { opacity: 1; }
   100% { transform: translateY(0%); }
-=======
-  100% { opacity: 0;}
-}
-
-@keyframes translateToRight {
-  0% { opacity: 1; transform: translateX(-125%) }
-  100% { opacity: 1; transform: translateX(0%) }
-}
-
-@keyframes translateToLeft {
-  0% { opacity: 1; transform: translateX(200%) }
-  100% { opacity: 1; transform: translateX(0%) }
-}
-
-@keyframes translateToUp {
-  0% { opacity: 1; transform: translateY(200%) }
-  100% { opacity: 1; transform: translateY(0%) }
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
 }
 
 @keyframes scaleTranslateImage {
-  0% {
-    transform: scale(0.85) translateX(10%);
-  }
-
-  100% {
-    transform: scale(1) translateX(0%);
-  }
+  0% { transform: scale(0.85) translateX(10%); }
+  100% { transform: scale(1) translateX(0%); }
 }
 
 @keyframes animateMouseIcon {
@@ -69,13 +41,8 @@
 }
 
 @keyframes scrollUp {
-<<<<<<< HEAD
   0% { transform: translateY(0); }
   100% { transform: translateY(-667px); }
-=======
-  0% { transform: translateY(0) }
-  100% { transform: translateY(-667px) }
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
 }
 
 @keyframes withBarToLeft {

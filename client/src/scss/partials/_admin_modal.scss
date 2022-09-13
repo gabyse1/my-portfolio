@@ -3,14 +3,9 @@
   height: 100%;
   background-color: $base;
   transition: background-color 250ms ease-in;
-<<<<<<< HEAD
 
   @include display-row-center-col-center;
 
-=======
-  
-  @include display-row-center-col-center;
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
   display: none;
 
   .modal__container {
@@ -24,10 +19,7 @@
   .modal__header {
     width: 100%;
     margin-bottom: 1rem;
-<<<<<<< HEAD
 
-=======
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     @include display-row-end-col-center;
   }
 
@@ -79,8 +71,4 @@
   top: 0;
   left: 0;
   z-index: 7;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1

@@ -11,10 +11,7 @@
   .about__profile,
   .about__skill {
     width: 100%;
-<<<<<<< HEAD
 
-=======
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     @include display-column-start-row-center;
   }
 
@@ -22,46 +19,28 @@
     margin-bottom: 2rem;
     justify-content: center;
     text-align: center;
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     .image__box {
       width: 200px;
       height: 200px;
       margin-bottom: 1rem;
       border-radius: 50%;
     }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     .text__box {
       opacity: 0;
       animation: fadeOut 1000ms ease-in-out 0ms forwards;
     }
   }
-<<<<<<< HEAD
 
   .about__skill {
     overflow: hidden;
 
-=======
-  
-  .about__skill {
-    overflow: hidden;
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     .list {
       width: 100%;
       opacity: 0;
       animation: fadeOut 1000ms ease-in-out 0ms forwards;
-<<<<<<< HEAD
 
-=======
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
       @include display-row-center-col-center;
     }
   }
@@ -69,11 +48,7 @@
   @include mq-tablet {
     .about__profile {
       margin-bottom: 3rem;
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
       .image__box {
         margin-bottom: 2rem;
       }
@@ -82,16 +57,10 @@
         max-width: 400px;
       }
     }
-<<<<<<< HEAD
 
     .about__skill {
       overflow: hidden;
 
-=======
-    
-    .about__skill {
-      overflow: hidden;
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
       @include display-column-start-row-center;
 
       .list {
@@ -107,13 +76,9 @@
   @include mq-desktop {
     .section__container {
       width: 100%;
-<<<<<<< HEAD
 
       @include display-row-center-col-center;
 
-=======
-      @include display-row-center-col-center;
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
       justify-content: space-evenly;
     }
 
@@ -157,7 +122,6 @@
     .list:nth-child(1) {
       animation: translateToLeft 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 500ms forwards;
     }
-<<<<<<< HEAD
 
     .list:nth-child(2) {
       animation: translateToLeft 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 750ms forwards;
@@ -167,17 +131,6 @@
       animation: translateToLeft 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 1000ms forwards;
     }
 
-=======
-  
-    .list:nth-child(2) {
-      animation: translateToLeft 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 750ms forwards;
-    }
-  
-    .list:nth-child(3) {
-      animation: translateToLeft 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 1000ms forwards;
-    }
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     .list:nth-child(4) {
       animation: translateToLeft 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 1250ms forwards;
     }

@@ -12,7 +12,6 @@
     }
   }
 
-<<<<<<< HEAD
   .list__data,
   .list__media,
   .contact__form {
@@ -20,15 +19,12 @@
     animation: fadeOut 1000ms ease-in-out 0ms forwards;
   }
 
-=======
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
   .contact__information {
     margin-bottom: 1rem;
 
     .message {
       display: none;
     }
-<<<<<<< HEAD
 
     .list {
       width: 100%;
@@ -40,33 +36,15 @@
     .list__data {
       @include display-column-start-row-center;
 
-=======
-  
-    .list {
-      width: 100%;
-      margin-bottom: 0.5rem;
-      @include display-row-center-col-center;
-    }
-  
-    .list__data {
-      @include display-column-start-row-center;
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
       .icon__box {
         margin-right: 1rem;
       }
     }
   }
-<<<<<<< HEAD
 
   .contact__form {
     position: relative;
 
-=======
-  
-  .contact__form {
-    position: relative;
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     .alert {
       position: absolute;
       bottom: 0;
@@ -74,16 +52,6 @@
       transform: translateX(-50%);
     }
   }
-<<<<<<< HEAD
-=======
-  
-  .list__data,
-  .list__media,
-  .contact__form {
-    opacity: 0;
-    animation: fadeOut 1000ms ease-in-out 0ms forwards;
-  }
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
 
   @include mq-tablet {
     .section__container {
@@ -93,10 +61,7 @@
     .contact__information {
       max-width: 30rem;
       margin-bottom: 2.5rem;
-<<<<<<< HEAD
 
-=======
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
       @include display-column-start-row-center;
 
       .message {
@@ -117,10 +82,7 @@
   @include mq-desktop {
     .section__container {
       @include display-row-center-col-center;
-<<<<<<< HEAD
 
-=======
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
       justify-content: space-evenly;
 
       .contact__information,
@@ -155,8 +117,4 @@
       animation: translateToLeft 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 1000ms forwards;
     }
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1

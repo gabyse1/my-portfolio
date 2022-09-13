@@ -15,28 +15,19 @@
 
   .records__list {
     width: 100%;
-<<<<<<< HEAD
 
-=======
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     @include display-column-start-row-start;
 
     > .list__item {
       width: 100%;
       border-top: 1px solid $purple-dark;
-<<<<<<< HEAD
 
-=======
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
       @include display-column-start-row-start;
 
       > * {
         width: 100%;
         padding: 1rem 0;
-<<<<<<< HEAD
 
-=======
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
         @include display-column-start-row-start;
       }
 
@@ -47,10 +38,7 @@
 
       .item__group-buttons {
         @include display-row-start-col-center;
-<<<<<<< HEAD
 
-=======
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
         justify-content: space-evenly;
       }
 
@@ -61,7 +49,6 @@
         }
       }
 
-<<<<<<< HEAD
       .list__item-tool-icon {
         height: 4rem;
 
@@ -71,8 +58,6 @@
         }
       }
 
-=======
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
       .list__item-details {
         @include display-column-start-row-start;
 
@@ -87,17 +72,6 @@
           }
         }
       }
-<<<<<<< HEAD
-=======
-
-      .list__item-tool-icon {
-        height: 4rem;
-        img {
-          height: 100%;
-          width: auto;
-        }
-      }
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     }
   }
 }

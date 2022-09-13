@@ -54,11 +54,7 @@
       position: relative;
       transition: transform 750ms ease, background-color 250ms ease-in-out;
     }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     .menu__button-bar::before,
     .menu__button-bar::after {
       display: table;
@@ -69,19 +65,11 @@
       background-color: $purple-dark;
       transition: transform 750ms ease, background-color 250ms ease-in-out;
     }
-<<<<<<< HEAD
 
     .menu__button-bar::before {
       top: -8px;
     }
 
-=======
-  
-    .menu__button-bar::before {
-      top: -8px;
-    }
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     .menu__button-bar::after {
       top: 8px;
     }
@@ -91,20 +79,12 @@
     .menu__button-bar {
       transform: rotate(45deg);
     }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     .menu__button-bar::before {
       top: 0;
       transform: rotate(90deg);
     }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
     .menu__button-bar::after {
       top: 0;
       transform: rotate(90deg);
@@ -142,19 +122,12 @@
         background-color: $coral-dark;
       }
     }
-<<<<<<< HEAD
   }
-=======
-  } 
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
 }
 
 .header__admin {
   @include display-row-center-col-center;
-<<<<<<< HEAD
 
-=======
->>>>>>> e7c8cdc26c1f731c9bf15efd148ddfc794b421c1
   justify-content: space-between;
 
   .menu__list {
