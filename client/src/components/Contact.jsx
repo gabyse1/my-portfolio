@@ -16,7 +16,6 @@ const Contact = ({ anim }) => {
   const [resLoading, setResLoading] = useState(false);
   const [resStatus, setResStatus] = useState(null);
   const [resMessage, setResMessage] = useState(null);
-  const [hideInformation, setHideInformation] = useState('');
 
   useEffect(() => {
     if (resStatus) {
@@ -55,14 +54,10 @@ const Contact = ({ anim }) => {
       });
   };
 
-  const handleMobileKeyboard = () => {
-    if (window.innerWidth < 768) setHideInformation('hide__information');
-  };
-
   return (
     <section className={`page__section contact__section ${anim}`} id="contact" data-index="4">
       <div className="section__container">
-        <div className={`contact__information ${hideInformation}`}>
+        <div className="contact__information">
           <h2 className="section__title">Get In Touch</h2>
           <div className="message">
             <p>If you have a project you need coded, do not hesitate to contact me.</p>
@@ -101,7 +96,7 @@ const Contact = ({ anim }) => {
           <form onSubmit={submitHandler}>
             <div className="form-group">
               <label htmlFor="fullname">
-                <input type="text" name="fullname" id="fullname" className="form-control" placeholder="Gabriela Sánchez" value={fullname} onChange={(e) => setFullname(e.target.value)} onClick={handleMobileKeyboard} required />
+                <input type="text" name="fullname" id="fullname" className="form-control" placeholder="Gabriela Sánchez" value={fullname} onChange={(e) => setFullname(e.target.value)} required />
                 <span className="label-text">Full name</span>
               </label>
             </div>
