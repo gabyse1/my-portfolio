@@ -251,9 +251,9 @@ form {
 
   .section__container {
     width: 100%;
-    // height: calc(100vh - 5rem);
-    // margin-top: 5rem;
-    height: 100vh;
+    height: calc(100vh - 5rem);
+    margin-top: 5rem;
+    // height: 100vh;
     padding: 5%;
   }
 
