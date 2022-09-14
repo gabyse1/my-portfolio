@@ -206,6 +206,8 @@
       }
 
       .slides__controls {
+        bottom: 0;
+
         .pagination {
           font-size: 1rem;
 
@@ -428,6 +430,11 @@
         height: 100%;
         margin-left: auto;
         margin-right: 0;
+      }
+
+      .icon__mouse {
+        left: 15%;
+        bottom: 5%;
       }
     }
   }
