@@ -5,7 +5,7 @@
   background-size: cover;
 
   .section__container {
-    padding-bottom: 7%;
+    padding-bottom: 8%;
   }
 
   .image__box {
@@ -254,6 +254,12 @@
   @include mq-tablet {
     .section__container {
       padding-bottom: 5%;
+    }
+  }
+
+  @include mq-desktop {
+    .section__container {
+      padding-bottom: 2% !important;
     }
   }
 }
