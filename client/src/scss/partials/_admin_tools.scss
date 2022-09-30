@@ -1,0 +1,25 @@
+@include mq-tablet {
+  .records__list-tools {
+    .list__item {
+      flex-direction: row !important;
+      justify-content: space-evenly !important;
+      align-items: center !important;
+
+      .item__group {
+        width: 50% !important;
+        flex-direction: row !important;
+        justify-content: start !important;
+        align-items: center !important;
+
+        > * {
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
+      }
+
+      .list__item-title {
+        width: 30%;
+      }
+    }
+  }
+}
