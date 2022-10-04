@@ -2,10 +2,13 @@
   "name": "my-portfolio",
   "version": "1.0.0",
   "description": "A website to show the developer information and highlighted works.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env NODE_ENV=development nodemon src/app.js --exec babel-node "
+    "dev": "cross-env NODE_ENV=development nodemon src/app.js --exec babel-node",
+    "clean": "rm -rf build && mkdir build",
+    "build-server": "babel -d ./build ./src -s",
+    "build": "npm run clean && npm run build-server",
+    "start": "cross-env NODE_ENV=production node ./build/app.js"
   },
   "repository": {
     "type": "git",

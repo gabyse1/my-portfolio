@@ -78,6 +78,7 @@
   $animation_duration: $slides_no * $slide_duration;
 
   // Convert seconds to percentage duration for one slide
+
   $slide_percentage_duration: calc(100% / $slides_no);
 
   // Calculate fade time in percentage
