@@ -78,10 +78,10 @@
   $animation_duration: $slides_no * $slide_duration;
 
   // Convert seconds to percentage duration for one slide
-  $slide_percentage_duration: 100% / $slides_no;
+  $slide_percentage_duration: calc(100% / $slides_no);
 
   // Calculate fade time in percentage
-  $fade_percentage_duration: (100% * $slide_fade_duration) / $animation_duration;
+  $fade_percentage_duration: calc((100% * $slide_fade_duration) / $animation_duration);
 
   // Set the keyframes
   @keyframes #{$animation_name} {
