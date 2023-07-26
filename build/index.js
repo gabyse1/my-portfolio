@@ -67,4 +67,4 @@ app.use(function (error, req, res) {
 app.listen(app.get('port'), function () {
   console.log("Server listening on port ".concat(app.get('port')));
 });
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=index.js.map
