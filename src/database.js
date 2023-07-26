@@ -1,11 +1,12 @@
 import dotenv from 'dotenv';
-import { connect } from 'mongoose';
+import mongoose from 'mongoose';
 
 if (process.env.NODE_ENV !== 'production') dotenv.config();
 
 (async () => {
   try {
-    const db = await connect(process.env.MONGODB_URI, {
+    mongoose.set('strictQuery', false);
+    const db = await mongoose.connect(process.env.MONGODB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
