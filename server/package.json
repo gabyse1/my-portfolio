@@ -4,9 +4,9 @@
   "description": "A website to show the developer information and highlighted works.",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon index.js --exec babel-node",
+    "dev": "cross-env NODE_ENV=development nodemon ./src/index.js --exec babel-node",
     "clean": "rm -rf build && mkdir build",
-    "build-server": "babel -d ./build . -s",
+    "build-server": "babel -d ./build ./src -s",
     "build": "npm run clean && npm run build-server",
     "start": "cross-env NODE_ENV=production node ./build/index.js"
   },
