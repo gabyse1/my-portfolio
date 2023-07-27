@@ -27,7 +27,7 @@ app.use(bodyParser.json());
 app.use(cors({ origin: `http://localhost:${process.env.PORT || 3000}` }));
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, '../client/build')));
+// app.use(express.static(path.join(__dirname, '../client/build')));
 
 // routes
 app.use('/api/s3', secureurlRouter);
@@ -38,9 +38,9 @@ app.use('/api/mail', mailRouter);
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../client/build/index.html'));
+// });
 
 // error handler
 app.use((error, req, res) => {
