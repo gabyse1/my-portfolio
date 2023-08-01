@@ -22,7 +22,7 @@ A fullscreen website composed of four sections to show the developer basic infor
 
 ## Live demo
 
-[gabrielasanchezespirilla.cyclic.app](https://gabrielasanchezespirilla.cyclic.app/)
+[www.gabrielasanchezespirilla.tech](https://www.gabrielasanchezespirilla.tech)
 
 
 ## Built With
