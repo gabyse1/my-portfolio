@@ -4,12 +4,12 @@ import bodyParser from 'body-parser';
 import morgan from 'morgan';
 import cors from 'cors';
 import path from 'path';
-import './database';
-import secureurlRouter from './routes/secureurl.router';
-import userRouter from './routes/user.router';
-import toolRouter from './routes/tool.router';
-import projectRouter from './routes/project.router';
-import mailRouter from './routes/mail.router';
+import './src/database';
+import secureurlRouter from './src/routes/secureurl.router';
+import userRouter from './src/routes/user.router';
+import toolRouter from './src/routes/tool.router';
+import projectRouter from './src/routes/project.router';
+import mailRouter from './src/routes/mail.router';
 
 // set environment
 if (process.env.NODE_ENV !== 'production') dotenv.config();
@@ -27,7 +27,7 @@ app.use(bodyParser.json());
 app.use(cors({ origin: `http://localhost:${process.env.PORT || 3000}` }));
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, '../client/build')));
+app.use(express.static(path.join(__dirname, './client/build')));
 
 // routes
 app.use('/api/s3', secureurlRouter);
@@ -39,7 +39,7 @@ app.use('/api/mail', mailRouter);
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+  res.sendFile(path.join(__dirname, './client/build/index.html'));
 });
 
 // error handler
