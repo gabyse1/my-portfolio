@@ -5,7 +5,7 @@ const About = ({ anim }) => (
     <div className="section__container">
       <div className="about__profile">
         <div className="image__box">
-          <img src="https://my-portfolio-2023.s3.amazonaws.com/gaby-profile.jpg" alt="Gaby profile" />
+          <img src={process.env.REACT_APP_PROFILE_PHOTO} alt="Gaby profile" />
         </div>
         <div className="text__box">
           <p>
