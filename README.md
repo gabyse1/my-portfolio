@@ -22,7 +22,7 @@ A fullscreen website composed of four sections to show the developer basic infor
 
 ## Live demo
 
-[www.gabrielasanchezespirilla.tech](https://www.gabrielasanchezespirilla.tech)
+[www.gabyinnovasoftware.com](https://www.gabyinnovasoftware.com)
 
 
 ## Built With
