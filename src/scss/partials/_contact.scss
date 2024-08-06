@@ -1,0 +1,123 @@
+.contact__section {
+  background-image: url('../../images/bg-portfolio-gral-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+
+  .section__container {
+    @include display-column-center-row-center;
+
+    > * {
+      width: 100%;
+    }
+  }
+
+  .list__data,
+  .list__media,
+  .contact__form {
+    opacity: 0;
+    animation: fadeOut 1000ms ease-in-out 0ms forwards;
+  }
+
+  .contact__information {
+    margin-bottom: 1rem;
+
+    .message {
+      margin-bottom: 2.5rem;
+      text-align: center;
+
+      @include display-row-center-col-center;
+    }
+
+    .list {
+      width: 100%;
+      margin-bottom: 2.5rem;
+
+      @include display-row-center-col-center;
+    }
+
+    .list__data {
+      @include display-column-start-row-center;
+
+      .icon__box {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .contact__form {
+    position: relative;
+    display: none;
+
+    .alert {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @include mq-tablet {
+    .section__container {
+      @include display-column-center-row-center;
+    }
+
+    .contact__information {
+      max-width: 30rem;
+      margin-bottom: 2.5rem;
+
+      @include display-column-start-row-center;
+
+      .list__media {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .contact__form {
+      display: block;
+
+      form {
+        width: 35rem !important;
+      }
+    }
+  }
+
+  @include mq-desktop {
+    .section__container {
+      @include display-row-center-col-center;
+
+      justify-content: space-evenly;
+
+      .contact__information,
+      .contact__form {
+        margin: 0 1rem;
+      }
+
+      .contact__form {
+        max-width: 30rem;
+      }
+    }
+  }
+}
+
+#contact.contact__animation {
+  .message {
+    animation: translateToRight 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 250ms forwards;
+  }
+
+  .list__data {
+    animation: translateToRight 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 500ms forwards;
+  }
+
+  .list__media {
+    animation: translateToRight 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 750ms forwards;
+  }
+
+  .contact__form {
+    animation: translateToRight 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 1000ms forwards;
+
+    @include mq-desktop {
+      animation: translateToLeft 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 1000ms forwards;
+    }
+  }
+}
