@@ -174,7 +174,7 @@ const Works = ({ anim }) => {
             }
           </div>
           <div className={`slides__controls ${displayControls}`}>
-            <button type="button" className="btn__transparent" onClick={handlePrevSlide}>
+            <button type="button" aria-label="Carrusel forward" className="btn__transparent" onClick={handlePrevSlide}>
               <BsArrowLeft />
             </button>
             <div className="pagination">
@@ -195,7 +195,7 @@ const Works = ({ anim }) => {
               </div>
               <div className="pag__total">{numSlides <= 9 ? `0${numSlides}` : numSlides}</div>
             </div>
-            <button type="button" className="btn__transparent" onClick={handleNextSlide}>
+            <button type="button" aria-label="Carrusel back" className="btn__transparent" onClick={handleNextSlide}>
               <BsArrowRight />
             </button>
           </div>

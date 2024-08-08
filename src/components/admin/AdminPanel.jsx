@@ -58,7 +58,7 @@ const AdminPanel = ({ itemType }) => {
           <header className="app-header admin__header">
             <div className="header__top">
               <div className="brand">{userInfo.name}</div>
-              <button type="button" className={'menu__button '.concat(modalMenuButton)} onClick={menuToggle}>
+              <button type="button" aria-label="Menu button" className={'menu__button '.concat(modalMenuButton)} onClick={menuToggle}>
                 <span className="menu__button-bar" />
               </button>
             </div>

@@ -7,11 +7,10 @@ const getImageAWSUrl = async (file) => {
     method: 'PUT',
     body: file,
     headers: {
-      'Content-Type': contenttype
+      'Content-Type': contenttype,
     },
   });
   return response;
 };
 
 export default getImageAWSUrl;
-
