@@ -19,7 +19,7 @@ const Header = ({ activeItem, dimensions }) => {
     <header className="app-header">
       <div className="header__top">
         <Logo />
-        <button type="button" className={'menu__button '.concat(modalMenuButton)} onClick={menuToggle}>
+        <button type="button" aria-label="Menu button" className={'menu__button '.concat(modalMenuButton)} onClick={menuToggle}>
           <span className="menu__button-bar" />
         </button>
       </div>

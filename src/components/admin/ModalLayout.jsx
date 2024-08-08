@@ -40,7 +40,7 @@ const ModalLayout = ({
     <div className={`modal__box ${adminModal}`} id="modal__box">
       <div className="modal__container">
         <div className="modal__header">
-          <button type="button" className="btn__transparent" onClick={handleClose}>
+          <button type="button" aria-label="Close button" className="btn__transparent" onClick={handleClose}>
             <GrClose />
           </button>
         </div>
