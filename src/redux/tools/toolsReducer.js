@@ -20,6 +20,7 @@ const TOOL_DELETE_FAIL = 'TOOL_DELETE_FAIL';
 
 const getToolList = () => async (dispatch) => {
   dispatch({ type: TOOL_LIST_REQUEST });
+  console.log('------RUTA:', baseURL);
 
   await fetch(baseURL)
     .then((response) => {

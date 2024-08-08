@@ -4,12 +4,13 @@ const LoadingBox = ({ loadingMsg }) => (
   <div className="loading">
     <i className="fa fa-spinner fa-spin" />
     {' '}
-    { loadingMsg }...
+    { loadingMsg }
+    ...
   </div>
 );
 
 LoadingBox.defaultProps = {
-  loadingMsg: 'Loading'
+  loadingMsg: 'Loading',
 };
 
 LoadingBox.propTypes = {
