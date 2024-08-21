@@ -5,12 +5,23 @@
     <link rel="icon" type="image/x-icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="title" property="og:title" content="Gaby Innova Software: Gabriela Sánchez Espirilla" />
-    <meta name="type" property="og:type" content="website" />
-    <meta name="image" property="og:image" content="https://my-portfolio-24.s3.amazonaws.com/gaby-profile.jpg">
-    <meta name="url" property="og:url" content="%PUBLIC_URL%/" />
-    <meta name="description" property="og:description" content="I am Gaby, a software developer always excited to build hight quality solutions that makes people life easier, it could be alone or as a part of a teamwork." />
-    <meta name="author" property="article:author" content="Gabriela Sánchez Espirilla">
+    <meta property="og:title" content="Gaby Innova Software | Gabriela Sánchez Espirilla" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Gaby Innova Software" />
+    <meta property="og:image" content="https://my-portfolio-24.s3.amazonaws.com/gabriela-sanchez-espirilla.jpg">
+    <meta property="og:image:secure_url" content="https://my-portfolio-24.s3.amazonaws.com/gabriela-sanchez-espirilla.jpg">
+    <meta property="og:image:alt" content="Gabriela Sánchez Espirilla" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:url" content="%PUBLIC_URL%/" />
+    <meta property="og:description" content="I am Gaby, a software developer always excited to build hight quality solutions that makes people life easier, it could be alone or as a part of a teamwork." />
+    <meta property="article:author" content="Gabriela Sánchez Espirilla">
+    <meta name="twitter:title" content="Gaby Innova Software | Gabriela Sánchez Espirilla" />
+    <meta name="twitter:image:src" content="https://my-portfolio-24.s3.amazonaws.com/gabriela-sanchez-espirilla.jpg">
+    <meta name="twitter:image:alt" content="Gabriela Sánchez Espirilla" />
+    <meta property="twitter:url" content="%PUBLIC_URL%/" />
+    <meta name="twitter:description" content="I am Gaby, a software developer always excited to build hight quality solutions that makes people life easier, it could be alone or as a part of a teamwork." />
+    <meta name="twitter:creator" content="@gse_sd">
+    
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <link rel="logo-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="canonical" href="https://www.gabyinnovasoftware.com">
@@ -32,12 +43,24 @@
     <script type="application/ld+json">
     {
       "@context" : "https://schema.org",
-      "@type" : "WebSite",
-      "name" : "Gaby Innova Software: Gabriela Sanchez Espirilla",
-      "alternateName" : "Gabriela Sánchez Espirilla",
-      "url" : "https://www.gabyinnovasoftware.com",
-      "description" : "I am Gaby, a software developer always excited to build hight quality solutions that makes people life easier, it could be alone or as a part of a teamwork.",
-      "image" : "https://my-portfolio-24.s3.amazonaws.com/gaby-profile.jpg"
+      "@graph" : [
+        {
+          "@type" : "WebSite",
+          "@id" : "https://www.gabyinnovasoftware.com"
+          "name" : "Gaby Innova Software",
+        },
+        {
+          "@type" : "WebPage",
+          "@id" : "https://www.gabyinnovasoftware.com/#home"
+          "name" : "Gaby Innova Software | Gabriela Sanchez Espirilla",
+          "alternateName" : "Gabriela Sánchez Espirilla",
+          "url" : "https://www.gabyinnovasoftware.com",
+          "about" : { "@id" : "https://www.gabyinnovasoftware.com/#about" },
+          "isPartOf" : {"@id" : "https://www.gabyinnovasoftware.com"},
+          "primaryImageOfPage" : { "@id" : "https://my-portfolio-24.s3.amazonaws.com/gabriela-sanchez-espirilla.jpg" },
+          "description" : "I am Gaby, a software developer always excited to build hight quality solutions that makes people life easier, it could be alone or as a part of a teamwork."
+        }
+      ]
     }
   </script>
     <script src="https://kit.fontawesome.com/a9e222b7dc.js" crossorigin="anonymous"></script>
