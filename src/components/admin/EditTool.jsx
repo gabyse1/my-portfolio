@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateTool } from '../../redux/tools/toolsReducer';
-import getImageAWSUrl from '../../helpers/getImageAWSUrl';
+import getImageBucketUrl from '../../helpers/getImageBucketUrl';
 import LoadingBox from './LoadingBox';
 import MessageBox from './MessageBox';
 
@@ -43,8 +43,8 @@ const EditTool = ({ handleClose }) => {
     e.preventDefault();
     let newTool = { name, icon: tool.icon };
     if (icon !== null) {
-      const iconUrl = await getImageAWSUrl(icon);
-      newTool = { ...newTool, icon: iconUrl.url.split('?')[0] };
+      const iconUrl = await getImageBucketUrl(icon);
+      newTool = { ...newTool, icon: iconUrl.url.replace('/upload/sign/', '/public/').split('?')[0] };
     }
     dispatch(updateTool(tool._id, newTool));
   };
