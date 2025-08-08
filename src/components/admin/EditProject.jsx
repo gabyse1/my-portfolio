@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { updateProject } from '../../redux/projects/projectsReducer';
-import getImageAWSUrl from '../../helpers/getImageAWSUrl';
+import getImageBucketUrl from '../../helpers/getImageBucketUrl';
 import LoadingBox from './LoadingBox';
 import MessageBox from './MessageBox';
 
@@ -79,12 +79,12 @@ const EditProject = ({ handleClose }) => {
     };
 
     if (mainImage !== null) {
-      const mainImageUrl = await getImageAWSUrl(mainImage);
-      newProject = { ...newProject, main_image: mainImageUrl.url.split('?')[0] };
+      const mainImageUrl = await getImageBucketUrl(mainImage);
+      newProject = { ...newProject, main_image: mainImageUrl.url.replace('/upload/sign/', '/public/').split('?')[0] };
     }
 
     if (conceptImage !== null) {
-      const conceptImageUrl = await getImageAWSUrl(conceptImage);
+      const conceptImageUrl = await getImageBucketUrl(conceptImage);
       newProject = { ...newProject, concept_image: conceptImageUrl.url.split('?')[0] };
     }
     dispatch(updateProject(project._id, newProject));
